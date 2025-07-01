@@ -27,5 +27,5 @@
 }
 
 .input-display {
-    @apply text-[20px] flex flex-col gap-2
+    @apply text-[20px] text-center flex flex-col gap-2
 }

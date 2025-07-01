@@ -102,6 +102,7 @@ const findUserButton = () => {
     })
 
     nameDataDisplay.textContent = userFind.name;
+    ageDataDisplay.textContent = userFind.age;
     
     console.log("Find user: ", userFind)
 }
