@@ -2,8 +2,10 @@ const userName = document.getElementById("name");
 const userAge = document.getElementById("age");
 const deleteObject = document.getElementById("deleteObject");
 const findUserNameInput = document.getElementById("findUser");
-const nameDataDisplay = document.getElementById("nameDataDisplay");
-const ageDataDisplay = document.getElementById("ageDataDisplay");
+const userId = document.getElementById("userId")
+const userNameDataDisplay = document.getElementById("userNameDataDisplay");
+const userAgeDataDisplay = document.getElementById("userAgeDataDisplay");
+const userEmailDataDisplay = document.getElementById("userEmailDataDisplay");
 let isDataClicked = false;
 const userData = []
 const preDefineList = [
@@ -101,8 +103,9 @@ const findUserButton = () => {
         return user.name === findUserName;
     })
 
-    nameDataDisplay.textContent = userFind.name;
-    ageDataDisplay.textContent = userFind.age;
+    userId.textContent = userFind.id;
+    userNameDataDisplay.textContent = userFind.name;
+    userAgeDataDisplay.textContent = userFind.age;
     
     console.log("Find user: ", userFind)
 }

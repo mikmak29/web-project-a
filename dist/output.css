@@ -558,6 +558,10 @@ video {
   display: flex;
 }
 
+.table {
+  display: table;
+}
+
 .grid {
   display: grid;
 }
@@ -569,6 +573,10 @@ video {
 .w-fit {
   width: -moz-fit-content;
   width: fit-content;
+}
+
+.w-full {
+  width: 100%;
 }
 
 .w-screen {
@@ -591,17 +599,12 @@ video {
   gap: 0.5rem;
 }
 
+.gap-4 {
+  gap: 1rem;
+}
+
 .gap-7 {
   gap: 1.75rem;
-}
-
-.gap-x-28 {
-  -moz-column-gap: 7rem;
-       column-gap: 7rem;
-}
-
-.gap-y-4 {
-  row-gap: 1rem;
 }
 
 .p-3 {
@@ -626,6 +629,27 @@ video {
 .py-4 {
   padding-top: 1rem;
   padding-bottom: 1rem;
+}
+
+.text-left {
+  text-align: left;
+}
+
+.text-sm {
+  font-size: 0.875rem;
+  line-height: 1.25rem;
+}
+
+.text-\[5px\] {
+  font-size: 5px;
+}
+
+.text-\[8px\] {
+  font-size: 8px;
+}
+
+.text-\[10px\] {
+  font-size: 10px;
 }
 
 :root {
@@ -678,12 +702,14 @@ video {
   color: rgb(255 255 255 / var(--tw-text-opacity, 1));
 }
 
-.input-display {
-  display: flex;
-  flex-direction: column;
-  gap: 0.5rem;
-  text-align: center;
-  font-size: 20px;
+.table-headings {
+  width: 50%;
+  padding: 0.5rem;
+}
+
+.table-data {
+  width: 50%;
+  padding: 0.5rem;
 }
 
 @media (min-width: 768px) {
@@ -698,5 +724,43 @@ video {
 
   .tablet\:w-full {
     width: 100%;
+  }
+
+  .tablet\:gap-x-12 {
+    -moz-column-gap: 3rem;
+         column-gap: 3rem;
+  }
+
+  .tablet\:text-xl {
+    font-size: 1.25rem;
+    line-height: 1.75rem;
+  }
+
+  .tablet\:text-lg {
+    font-size: 1.125rem;
+    line-height: 1.75rem;
+  }
+
+  .tablet\:text-\[30px\] {
+    font-size: 30px;
+  }
+
+  .tablet\:text-\[20px\] {
+    font-size: 20px;
+  }
+
+  .tablet\:text-\[16px\] {
+    font-size: 16px;
+  }
+
+  .tablet\:text-\[14px\] {
+    font-size: 14px;
+  }
+}
+
+@media (min-width: 1024px) {
+  .laptop\:gap-x-24 {
+    -moz-column-gap: 6rem;
+         column-gap: 6rem;
   }
 }

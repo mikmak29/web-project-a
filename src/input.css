@@ -26,6 +26,10 @@
     @apply w-full bg-pink-500 py-3 px-4 text-[#fff] rounded-md;
 }
 
-.input-display {
-    @apply text-[20px] text-center flex flex-col gap-2
+.table-headings {
+    @apply w-1/2 p-2
+}
+
+.table-data {
+    @apply w-1/2 p-2
 }
