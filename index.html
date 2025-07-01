@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link rel="stylesheet" href="./dist/output.css">
+</head>
+
+<body>
+    <main class="h-auto w-screen">
+        <div class="w-screen tablet:w-[50%] tablet:mx-auto">
+            <div class="w-screen p-3 tablet:w-full">
+                <form action="" class="grid grid-cols-2 justify-between gap-2">
+                    <input type="text" id="name" placeholder="Name:" class="input-design">
+                    <input type="text" id="age" placeholder="Age: " class="input-design">
+                    <input type="text" id="deleteObject" placeholder="Delete Object Here:" class="input-design">
+                    <input type="text" id="findUser" placeholder="Find user:" class="input-design">
+
+                </form>
+            </div>
+            <div class="w-screen py-4 px-2 flex justify-center tablet:w-full">
+                <div class="w-fit grid grid-cols-2 gap-y-4 gap-x-28">
+                    <button onclick="createUserData()" class="button-design">Create Data</button>
+                    <button onclick="readListData()" class="button-design">Read List Data</button>
+                    <button onclick="updateData()" class="button-design">Update Data</button>
+                    <button onclick="deleteUserValue()" class="button-design">Delete Input</button>
+                    <button onclick="removeUser()" class="button-design">Remove User</button>
+                    <button onclick="findUserButton()" class="button-design">Find User</button>
+                    <button onclick="addListButton()" class="button-design">Add List</button>
+                    <button onclick="checkInput()" class="button-design">Check Input</button>
+                </div>
+            </div>
+        </div>
+        <div class="w-screen flex gap-7 py-3 px-6">
+            <span class="input-display">Name:
+                <span id="nameDataDisplay"></span>
+            </span>
+            <span class="input-display">Age:
+                <span id="ageDataDisplay"></span>
+            </span>
+        </div>
+    </main>
+    <script src="./js/script.js"></script>
+</body>
+
+</html>
