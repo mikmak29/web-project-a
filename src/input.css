@@ -1,0 +1,31 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+    --primary-color: #242424;
+    --secondary-color: #F8F8F8;
+    --accent-color: #FEC5F6;
+    --bg-color: #B33791;
+    --sub-bg-color: #C562AF;
+}
+
+.input-design {
+    @apply bg-[--bg-color] text-[--secondary-color] text-[13px] py-3 px-2 rounded-md tablet:text-[15px]
+}
+
+.input-design:focus {
+    outline: none;
+}
+
+.input-design::placeholder {
+    color: var(--accent-color)
+}
+
+.button-design {
+    @apply w-full bg-pink-500 py-3 px-4 text-[#fff] rounded-md;
+}
+
+.input-display {
+    @apply text-[20px] flex flex-col gap-2
+}
