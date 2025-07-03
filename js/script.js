@@ -105,7 +105,7 @@ const findUserButton = () => {
 
     userId.textContent = userFind.id;
     userNameDataDisplay.textContent = userFind.name;
-    userAgeDataDisplay.textContent = userFind.age;
+    userAgeDataDisplay.textContent = parseInt(userFind.age);
     
     console.log("Find user: ", userFind)
 }
@@ -116,4 +116,8 @@ const addListButton = () => {
 
 const checkInput = () => {
     console.log("Input: ", ...userData)
+}
+
+const totalUser = () => {
+    console.log(userData.length)
 }

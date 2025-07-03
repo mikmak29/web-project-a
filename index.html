@@ -11,7 +11,7 @@
 
 <body>
     <main class="h-auto w-screen">
-        <div class="w-screen tablet:w-[50%] tablet:mx-auto">
+        <div class="w-screen tablet:w-[65%] tablet:mx-auto">
             <div class="w-screen p-3 tablet:w-full">
                 <form action="" class="grid grid-cols-2 justify-between gap-2">
                     <input type="text" id="name" placeholder="Name:" class="input-design">
@@ -21,7 +21,7 @@
                 </form>
             </div>
             <div class="w-screen py-4 px-2 flex justify-center tablet:w-full">
-                <div class="w-fit grid grid-cols-2 gap-4 tablet:gap-x-12 laptop:gap-x-24">
+                <div class="w-fit grid grid-cols-2 gap-4 tablet:grid-cols-3 tablet:gap-x-8 laptop:gap-x-24">
                     <button onclick="createUserData()" class="button-design">Create Data</button>
                     <button onclick="readListData()" class="button-design">Read List Data</button>
                     <button onclick="updateData()" class="button-design">Update Data</button>
@@ -30,6 +30,7 @@
                     <button onclick="findUserButton()" class="button-design">Find User</button>
                     <button onclick="addListButton()" class="button-design">Add List</button>
                     <button onclick="checkInput()" class="button-design">Check Input</button>
+                    <button onclick="totalUser()" class="button-design">Total User</button>
                 </div>
             </div>
         </div>
